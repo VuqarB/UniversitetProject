@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.footer {
+    background: var(--color-main);
+    &__copyright {
+        font-size: 16px;
+        color: #212529;
+        margin-bottom: 10px;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;  
+        justify-content: center;
+        margin-bottom: 10px;
+        padding: 0;
+        .footer__item {
+            margin: 0 12px;
+            .footer__link {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                
+                height: 2.5rem;
+                width: 2.5rem;
+                padding: 0;
+                border-radius: 100%;
+                color: var(--color-main);
+                background: #212529;
+            }
+        }
+    }
+
+    &__navigation {
+        margin-bottom: 10px;
+        a {
+            font-size: 16px;
+            color: #212529;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    width: 100%;
+    padding: 15px 0;
+
+    transition: var(--transition);
+    
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header__logo {
+            img {
+                width: 200px;
+            }
+            transition: var(--transition);
+        }
+
+        .header__list {
+            display: flex;
+            list-style: none;
+            margin: 0;
+
+            .header__item {
+                padding: 16px;
+
+                .header__link {
+                    font-family: 'Montserrat', sans-serif;
+                
+                    font-size: 16px;
+                    line-height: 1;
+                    color: var(--color-main);
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    transition: var(--transition);
+
+                    &:hover {
+                        color: #ffc800;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@include lg {
+    .header {
+        background-color: #212529 !important;
+
+        .header__logo {
+            img {
+                width: 125px;
+            }
+        }
+
+        .header__list {
+            position: fixed;
+            top: 57px;
+            left: -100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, .4);
+            backdrop-filter: blur(10px);
+            flex-direction: column;
+            transition: var(--transition);
+
+            &.active {
+                left: 0;
+            }
+
+            .header__item {
+                margin: 5px 0;
+            }
+        }
+    }
+}

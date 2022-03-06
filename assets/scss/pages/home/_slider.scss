@@ -1,0 +1,24 @@
+.slider {
+    padding: 40px 0;
+    background: var(--color-main);
+
+    &__item {
+        width: 116px;
+
+        .slider__image {
+            opacity: 0.5;
+            transition: 0.3s;
+            filter: grayscale(100);
+
+            &:hover {
+                filter: none;
+                opacity: 1;
+            }
+        }
+    }
+
+    .owl-item {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,48 @@
+.contact {
+    padding: 80px 0;
+    background: var(--color-main);
+    
+    &__wrapper {
+        text-align: center;
+    
+        margin: 0 0 50px 0;
+    }
+
+    &__title {
+        color: var(--color-main);
+    }
+    &__subtitle {
+        color: var(--color-main);
+    }
+
+    .form {
+        .input-data {
+            margin-bottom: 1.5rem;
+            input, textarea {
+                display: block;
+                width: 100%;
+
+                font-size: 1rem;
+                color: #212529;
+                line-height: 1.6;
+                font-weight: var(--weight-normal);
+                background-color: var(--color-main);
+
+                border: 1px solid #ced4da;
+                border-radius: 0.25rem;
+                transition: var(--transition);
+                padding: 1.25rem;
+
+                &::placeholder {
+                    color: #999;
+                    font-weight: var(--weight-black);
+                    text-transform: capitalize;
+                }
+            }
+
+            textarea {
+                height: 251px;
+            }
+        }
+    }
+}

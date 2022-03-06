@@ -1,0 +1,35 @@
+.accordion {
+    padding: 80px 0;
+    background-color: rgb(248, 249, 250);
+
+    &__wrapper {
+        text-align: center;
+    
+        margin: 0 0 50px 0;
+    }
+
+    .accordion__item {
+        margin: 0 0 23px 0;
+        border-radius: 15px;
+        overflow: hidden;
+
+        .accordion__name {
+            position: relative;
+    
+            display: block;
+            outline: none;
+            cursor: pointer;
+    
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: var(--weight-medium);
+    
+            font-family: "Roboto", sans-serif;
+        }
+
+        .accordion__description {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+    }
+}

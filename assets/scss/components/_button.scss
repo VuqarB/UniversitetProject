@@ -1,0 +1,70 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.intro__button {
+    display: inline-block;
+    
+    font-size: 20px;
+    color: var(--color-main);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: var(--weight-bold);
+
+    font-family: 'Montserrat', sans-serif;
+    
+    padding: 20px 40px;
+    border-color: #ffc800;
+    border-radius: 4px;
+    background-color: #ffc800;
+    transition: var(--transition);
+
+    &:hover {
+        color: var(--color-main);
+        text-decoration: none;
+        background-color: #d9aa00;
+        border-color: #cca000;
+    }
+}
+
+.pricing__button {
+    text-align: center;
+    background: #f8f8f8;
+    padding: 20px 15px;
+    margin: 20px -20px -20px -20px;
+
+    a {
+        display: inline-block;
+
+        font-size: 15px;
+        color: var(--color-main);
+        font-weight: var(--weight-semibold);
+        text-transform: capitalize;
+
+        font-family: 'Roboto', sans-serif;
+        
+        border-radius: 4px;
+        padding: 10px 35px;
+        background: #ffc800;
+        transition: var(--transition);
+
+        &:hover {
+            text-decoration: none;
+            background: #d9aa00;
+        }
+    }
+}
+
+.form__button {
+    color: var(--color-main);
+    background-color: #ffc800;
+    border: none;
+    border-radius: 5px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 1.125rem;
+    font-weight: var(--weight-bold);
+    margin: 30px 0 0 0;
+    padding: 1.25rem 2.5rem;
+}

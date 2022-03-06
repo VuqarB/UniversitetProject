@@ -1,0 +1,45 @@
+.intro {
+    position: relative;
+    height: 100vh;
+
+    &__wrapper {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+    
+        width: 100%;
+        text-align: center;
+
+        .intro__title {
+            font-family: 'Roboto Slab', serif;
+        
+            font-size: 35px;
+            line-height: 1;
+            color: var(--color-main);
+        
+            margin: 0 0 30px 0;
+        }
+        
+        .intro__subtitle {
+            font-family: 'Montserrat', sans-serif;
+        
+            font-size: 75px;
+            line-height: 1;
+            color: var(--color-main);
+            font-weight: var(--weight-bold);
+        
+            margin: 0 0 60px 0;
+        }
+    }
+}
+
+@include lg {
+    .intro__title {
+        font-size: 25px;
+    }
+    .intro__subtitle {
+        font-size: 55px;
+        margin: 0 0 30px 0;
+    }
+}

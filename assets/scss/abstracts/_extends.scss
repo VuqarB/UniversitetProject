@@ -1,0 +1,27 @@
+%d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+%sectionTitle {
+    font-family: 'Montserrat', sans-serif;
+        
+    font-size: 40px;
+    color: #212529;
+    text-transform: uppercase;
+    font-weight: var(--weight-bold);
+        
+    margin: 0 0 10px 0;
+}
+
+%sectionSubtitle {
+    font-family: 'Roboto Slab', serif;
+        
+    font-size: 16px;
+    color: #6c757d;
+    font-style: italic;
+
+    margin: 0 0 20px 0;
+}
