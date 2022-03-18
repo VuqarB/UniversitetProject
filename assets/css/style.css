@@ -1061,6 +1061,8 @@ select {
 
 .gallery .grid-item img {
   width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contact {
