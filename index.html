@@ -12,17 +12,22 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- =================================== Aos =================================== -->
 
+    <!-- =================================== Fancybox =================================== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <!-- =================================== Fancybox =================================== -->
 
     <!-- =================================== Owl - Carousel =================================== -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <!-- =================================== Owl - Carousel =================================== -->
+
+    <!-- =================================== Animate.css =================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- =================================== Animate.css =================================== -->
+
+    <!-- =================================== Bootstrap Icons =================================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- =================================== Bootstrap Icons =================================== -->
 
     <!-- =================================== Bootstrap 5 =================================== -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -166,8 +171,7 @@
                                     <div class="portfolio__content-subtitle subtitle">Illustration</div>
                                 </div>
 
-                                <div class="modal fade" id="portfolio_1" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal animate__animated" data-animate-in="animate__fadeInUpBig" data-animate-out="animate__fadeOutUp" id="portfolio_1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-xl">
                                         <div class="modal-content">
                                             <div class="modal-header border-0">
@@ -212,7 +216,7 @@
                                     <div class="portfolio__content-subtitle subtitle">Illustration</div>
                                 </div>
 
-                                <div class="modal fade" id="portfolio_2" tabindex="-1"
+                                <div class="modal animate__animated" data-animate-in="animate__fadeInUpBig" data-animate-out="animate__fadeOutUp" id="portfolio_2" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-xl">
                                         <div class="modal-content">
@@ -258,7 +262,7 @@
                                     <div class="portfolio__content-subtitle subtitle">Illustration</div>
                                 </div>
 
-                                <div class="modal fade" id="portfolio_3" tabindex="-1"
+                                <div class="modal animate__animated" data-animate-in="animate__fadeInUpBig" data-animate-out="animate__fadeOutUp" id="portfolio_3" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-xl">
                                         <div class="modal-content">
@@ -304,7 +308,7 @@
                                     <div class="portfolio__content-subtitle subtitle">Illustration</div>
                                 </div>
 
-                                <div class="modal fade" id="portfolio_4" tabindex="-1"
+                                <div class="modal animate__animated" data-animate-in="animate__fadeInUpBig" data-animate-out="animate__fadeOutUp" id="portfolio_4" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-xl">
                                         <div class="modal-content">
@@ -350,7 +354,7 @@
                                     <div class="portfolio__content-subtitle subtitle">Illustration</div>
                                 </div>
 
-                                <div class="modal fade" id="portfolio_5" tabindex="-1"
+                                <div class="modal animate__animated" data-animate-in="animate__fadeInUpBig" data-animate-out="animate__fadeOutUp" id="portfolio_5" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-xl">
                                         <div class="modal-content">
@@ -396,7 +400,7 @@
                                     <div class="portfolio__content-subtitle subtitle">Illustration</div>
                                 </div>
 
-                                <div class="modal fade" id="portfolio_6" tabindex="-1"
+                                <div class="modal animate__animated" data-animate-in="animate__fadeInUpBig" data-animate-out="animate__fadeOutUp" id="portfolio_6" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-xl">
                                         <div class="modal-content">
@@ -435,7 +439,7 @@
 
             <!-- =================================== gallery =================================== -->
             <section id="gallery" class="gallery">
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row" data-aos="fade-up">
                         <div class="col-lg-12">
                             <div class="gallery__wrapper">
@@ -447,40 +451,29 @@
 
                     <div class="row" data-aos="fade-up">
                         <div class="col-lg-12">
-                            <ul class="gallery__category">
-                                <li class="gallery__item active" data-filter="*">All</li>
-                                <li class="gallery__item" data-filter=".filter-app">App</li>
-                                <li class="gallery__item" data-filter=".filter-card">Card</li>
-                                <li class="gallery__item" data-filter=".filter-web">Web</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="row" data-aos="fade-up">
-                        <div class="col-lg-12">
                             <div class="grid">
                                 <div class="grid-item">
-                                    <a href="./assets/images/gallery/gallery-1.jpg" data-fancybox="gallery"
+                                    <a href="./assets/images/gallery/Gasan.jpeg" data-fancybox="gallery"
                                         data-caption="First image" data-width="1920" data-height="1080">
-                                        <img src="./assets/images/gallery/gallery-1.jpg" />
+                                        <img src="./assets/images/gallery/Gasan.jpeg" />
                                     </a>
                                 </div>
                                 <div class="grid-item">
-                                    <a href="./assets/images/gallery/gallery-2.jpg" data-fancybox="gallery"
+                                    <a href="./assets/images/gallery/WhatsApp Image 2022-03-28 at 1.49.18 AM.jpeg" data-fancybox="gallery"
                                         data-caption="Second image" data-width="1920" data-height="1080">
-                                        <img src="./assets/images/gallery/gallery-2.jpg" />
+                                        <img src="./assets/images/gallery/WhatsApp Image 2022-03-28 at 1.49.18 AM.jpeg" />
                                     </a>
                                 </div>
                                 <div class="grid-item">
-                                    <a href="./assets/images/gallery/gallery-3.jpg" data-fancybox="gallery"
+                                    <a href="./assets/images/gallery/WhatsApp Image 2022-03-28 at 1.55.47 AM (1).jpeg" data-fancybox="gallery"
                                         data-caption="Third image" data-width="1920" data-height="1080">
-                                        <img src="./assets/images/gallery/gallery-3.jpg" />
+                                        <img src="./assets/images/gallery/WhatsApp Image 2022-03-28 at 1.55.47 AM (1).jpeg" />
                                     </a>
                                 </div>
                                 <div class="grid-item">
-                                    <a href="./assets/images/gallery/gallery-4.jpg" data-fancybox="gallery"
+                                    <a href="./assets/images/gallery/WhatsApp Image 2022-03-28 at 1.59.19 AM.jpeg" data-fancybox="gallery"
                                         data-caption="Forth image" data-width="1920" data-height="1080">
-                                        <img src="./assets/images/gallery/gallery-4.jpg" />
+                                        <img src="./assets/images/gallery/WhatsApp Image 2022-03-28 at 1.59.19 AM.jpeg" />
                                     </a>
                                 </div>
                                 <div class="grid-item">
@@ -518,486 +511,639 @@
                     </div>
                 </div>
             </section>
-    <!-- =================================== gallery =================================== -->
+            <!-- =================================== gallery =================================== -->
 
-    <!-- =================================== owl-carousel =================================== -->
-    <section id="product" class="product">
-        <div class="container">
-            <div class="row" data-aos="fade-up">
-                <div class="col-lg-12">
-                    <div class="owl-carousel owl-theme product__carousel">
-                        <div class="item portfolio__item">
-                            <a href="#" class="portfolio__image">
-                                <img src="./assets/images/portfolio/5.jpg" alt="">
-                                <div class="portfolio__overlay">
-                                    <ion-icon name="add-outline"></ion-icon>
-                                </div>
-                            </a>
-                            <div class="portfolio__content">
-                                <div class="portfolio__content-title title">Threads</div>
-                                <div class="portfolio__content-subtitle subtitle">Illustration</div>
-                            </div>
-                        </div>
-                        <div class="item portfolio__item">
-                            <a href="#" class="portfolio__image">
-                                <img src="./assets/images/portfolio/1.jpg" alt="">
-                                <div class="portfolio__overlay">
-                                    <ion-icon name="add-outline"></ion-icon>
-                                </div>
-                            </a>
-                            <div class="portfolio__content">
-                                <div class="portfolio__content-title title">Threads</div>
-                                <div class="portfolio__content-subtitle subtitle">Illustration</div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item portfolio__item">
-                                <a href="#" class="portfolio__image">
-                                    <img src="./assets/images/portfolio/2.jpg" alt="">
-                                    <div class="portfolio__overlay">
-                                        <ion-icon name="add-outline"></ion-icon>
+            <!-- =================================== owl-carousel =================================== -->
+            <section id="thread" class="thread">
+                <div class="container">
+                    <div class="row" data-aos="fade-up">
+                        <div class="col-lg-12">
+                            <div class="owl-carousel owl-theme product__carousel">
+                                <div class="item portfolio__item">
+                                    <a href="./assets/images/portfolio/image-ordinary-3.jpg" class="portfolio__image" data-fancybox="fancy-carousel" data-caption="Threads" data-width="1920" data-height="1080">
+                                        <img src="./assets/images/portfolio/image-ordinary-3.jpg" alt="">
+                                    </a>
+                                    <div class="portfolio__content">
+                                        <div class="portfolio__content-title title">Threads</div>
+                                        <div class="portfolio__content-subtitle subtitle">Illustration</div>
                                     </div>
-                                </a>
-                                <div class="portfolio__content">
-                                    <div class="portfolio__content-title title">Threads</div>
-                                    <div class="portfolio__content-subtitle subtitle">Illustration</div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item portfolio__item">
-                                <a href="#" class="portfolio__image">
-                                    <img src="./assets/images/portfolio/3.jpg" alt="">
-                                    <div class="portfolio__overlay">
-                                        <ion-icon name="add-outline"></ion-icon>
+                                <div class="item portfolio__item">
+                                    <a href="./assets/images/portfolio/image-ordinary-4.jpg" class="portfolio__image" data-fancybox="fancy-carousel" data-caption="Threads" data-width="1920" data-height="1080">
+                                        <img src="./assets/images/portfolio/image-ordinary-4.jpg" alt="">
+                                    </a>
+                                    <div class="portfolio__content">
+                                        <div class="portfolio__content-title title">Threads</div>
+                                        <div class="portfolio__content-subtitle subtitle">Illustration</div>
                                     </div>
-                                </a>
-                                <div class="portfolio__content">
-                                    <div class="portfolio__content-title title">Threads</div>
-                                    <div class="portfolio__content-subtitle subtitle">Illustration</div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item portfolio__item">
-                                <a href="#" class="portfolio__image">
-                                    <img src="./assets/images/portfolio/4.jpg" alt="">
-                                    <div class="portfolio__overlay">
-                                        <ion-icon name="add-outline"></ion-icon>
+                                <div class="item portfolio__item">
+                                    <a href="./assets/images/portfolio/image-ordinary-5.jpg" class="portfolio__image" data-fancybox="fancy-carousel" data-caption="Threads" data-width="1920" data-height="1080">
+                                        <img src="./assets/images/portfolio/image-ordinary-5.jpg" alt="">
+                                    </a>
+                                    <div class="portfolio__content">
+                                        <div class="portfolio__content-title title">Threads</div>
+                                        <div class="portfolio__content-subtitle subtitle">Illustration</div>
                                     </div>
-                                </a>
-                                <div class="portfolio__content">
-                                    <div class="portfolio__content-title title">Threads</div>
-                                    <div class="portfolio__content-subtitle subtitle">Illustration</div>
+                                </div>
+                                <div class="item portfolio__item">
+                                    <a href="./assets/images/portfolio/image-ordinary-6.jpg" class="portfolio__image" data-fancybox="fancy-carousel" data-caption="Threads" data-width="1920" data-height="1080">
+                                        <img src="./assets/images/portfolio/image-ordinary-6.jpg" alt="">
+                                    </a>
+                                    <div class="portfolio__content">
+                                        <div class="portfolio__content-title title">Threads</div>
+                                        <div class="portfolio__content-subtitle subtitle">Illustration</div>
+                                    </div>
+                                </div>
+                                <div class="item portfolio__item">
+                                    <a href="./assets/images/portfolio/image-ordinary-7.jpg" class="portfolio__image" data-fancybox="fancy-carousel" data-caption="Threads" data-width="1920" data-height="1080">
+                                        <img src="./assets/images/portfolio/image-ordinary-7.jpg" alt="">
+                                    </a>
+                                    <div class="portfolio__content">
+                                        <div class="portfolio__content-title title">Threads</div>
+                                        <div class="portfolio__content-subtitle subtitle">Illustration</div>
+                                    </div>
+                                </div>
+                                <div class="item portfolio__item">
+                                    <a href="./assets/images/portfolio/image-ordinary-8.jpg" class="portfolio__image" data-fancybox="fancy-carousel" data-caption="Threads" data-width="1920" data-height="1080">
+                                        <img src="./assets/images/portfolio/image-ordinary-8.jpg" alt="">
+                                    </a>
+                                    <div class="portfolio__content">
+                                        <div class="portfolio__content-title title">Threads</div>
+                                        <div class="portfolio__content-subtitle subtitle">Illustration</div>
+                                    </div>
+                                </div>
+                                <div class="item portfolio__item">
+                                    <a href="./assets/images/portfolio/image-ordinary-9.jpg" class="portfolio__image" data-fancybox="fancy-carousel" data-caption="Threads" data-width="1920" data-height="1080">
+                                        <img src="./assets/images/portfolio/image-ordinary-9.jpg" alt="">
+                                    </a>
+                                    <div class="portfolio__content">
+                                        <div class="portfolio__content-title title">Threads</div>
+                                        <div class="portfolio__content-subtitle subtitle">Illustration</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- =================================== owl-carousel =================================== -->
+            </section>
+            <!-- =================================== owl-carousel =================================== -->
 
-    <!-- =================================== team =================================== -->
-    <section id="team" class="team">
-        <div class="container">
-            <div class="row" data-aos="fade-up">
-                <div class="col-lg-12">
-                    <div class="team__wrapper">
-                        <div class="team__title title">OUR AMAZING TEAM</div>
-                        <div class="team__subtitle subtitle">Lorem ipsum dolor sit amet consectetur.</div>
+            <!-- =================================== product =================================== -->
+            <section id="product" class="product">
+                <div class="container">
+
+                    <div class="row" data-aos="fade-up">
+                        <div class="col-lg-12">
+                            <div class="product__wrapper">
+                                <div class="product__title title">Products</div>
+                                <div class="product__subtitle subtitle">Lorem ipsum dolor sit amet consectetur.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" data-aos="zoom-in">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="product__item">
+                                <div class="circle"></div>
+                                <div class="content">
+                                    <h2>Pepsi</h2>
+                                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. In excepturi quos odit nesciunt repellendus suscipit distinctio ex quia consectetur adipisci accusantium sapiente, numquam fuga.</div>
+                                    <a href="#!">Buy Now</a>
+                                </div>
+                                <img src="https://www.pepsi.com/en-us/uploads/images/can-real-sugar-reg.png?mtime=20180110134758" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="product__item">
+                                <div class="circle gold"></div>
+                                <div class="content">
+                                    <h2>Pepsi</h2>
+                                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. In excepturi quos odit nesciunt repellendus suscipit distinctio ex quia consectetur adipisci accusantium sapiente, numquam fuga.</div>
+                                    <a href="#!">Buy Now</a>
+                                </div>
+                                <img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi-caffeine-free.png?mtime=20180110134746" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="product__item">
+                                <div class="circle white"></div>
+                                <div class="content">
+                                    <h2>Pepsi</h2>
+                                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. In excepturi quos odit nesciunt repellendus suscipit distinctio ex quia consectetur adipisci accusantium sapiente, numquam fuga.</div>
+                                    <a href="#!">Buy Now</a>
+                                </div>
+                                <img src="https://www.pepsi.com/en-us/uploads/images/Diet-Pepsi-CaffFree-v2_12oz.png?mtime=20180215173733" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="product__item">
+                                <div class="circle blue"></div>
+                                <div class="content">
+                                    <h2>Pepsi</h2>
+                                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. In excepturi quos odit nesciunt repellendus suscipit distinctio ex quia consectetur adipisci accusantium sapiente, numquam fuga.</div>
+                                    <a href="#!">Buy Now</a>
+                                </div>
+                                <img src="https://www.pepsi.com/en-us/uploads/images/nitro/PEP_NItro_DraftCola_Can.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="product__item">
+                                <div class="circle yellow"></div>
+                                <div class="content">
+                                    <h2>Pepsi</h2>
+                                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. In excepturi quos odit nesciunt repellendus suscipit distinctio ex quia consectetur adipisci accusantium sapiente, numquam fuga.</div>
+                                    <a href="#!">Buy Now</a>
+                                </div>
+                                <img src="https://www.pepsi.com/en-us/uploads/images/nitro/PEP_NItro_DraftCola_Can_Vanilla.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="product__item">
+                                <div class="circle black"></div>
+                                <div class="content">
+                                    <h2>Pepsi</h2>
+                                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. In excepturi quos odit nesciunt repellendus suscipit distinctio ex quia consectetur adipisci accusantium sapiente, numquam fuga.</div>
+                                    <a href="#!">Buy Now</a>
+                                </div>
+                                <img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi-zero-sugar.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row" data-aos="fade-up">
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="team__member-wrapper">
-                        <div class="team__member-photo">
-                            <img src="./assets/images/team/1.jpg" alt="">
+            </section>
+            <!-- =================================== product =================================== -->
+           
+            <!-- =================================== team =================================== -->
+            <section id="team" class="team">
+                <div class="container">
+                    <div class="row" data-aos="fade-up">
+                        <div class="col-lg-12">
+                            <div class="team__wrapper">
+                                <div class="team__title title">OUR AMAZING TEAM</div>
+                                <div class="team__subtitle subtitle">Lorem ipsum dolor sit amet consectetur.</div>
+                            </div>
                         </div>
-                        <div class="team__member-name title">Parveen Anand</div>
-                        <div class="team__member-position subtitle">Lead Designer</div>
+                    </div>
 
-                        <ul class="team__social-list">
-                            <li class="team__social-item"><a href="#" class="team__social-link">
+                    <div class="row" data-aos="fade-up">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="imgBox">
+                                    <img src="https://images.unsplash.com/photo-1534669740902-e09e38a6a29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80"
+                                        alt="">
+                                    <img src="https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80"
+                                        alt="">
+                                </div>
+                                <div class="details">
+                                    <div class="content">
+                                        <h2>
+                                            Vugar Balakishiyev <br>
+                                            <span>Front-End Developer</span>
+                                        </h2>
+                                        <div class="social-icons">
+                                            <a href="#" class="card__link"><i class="bi bi-facebook"></i></a>
+                                            <a href="#" class="card__link"><i class="bi bi-twitter"></i></a>
+                                            <a href="#" class="card__link"><i class="bi bi-linkedin"></i></a>
+                                            <a href="#" class="card__link"><i class="bi bi-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="imgBox">
+                                    <img src="https://images.pexels.com/photos/5611137/pexels-photo-5611137.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                                    <img src="https://images.pexels.com/photos/11567527/pexels-photo-11567527.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                </div>
+                                <div class="details">
+                                    <div class="content">
+                                        <h2>
+                                            Vugar Balakishiyev <br>
+                                            <span>Front-End Developer</span>
+                                        </h2>
+                                        <div class="social-icons">
+                                            <a href="#" class="card__link"><i class="bi bi-facebook"></i></a>
+                                            <a href="#" class="card__link"><i class="bi bi-twitter"></i></a>
+                                            <a href="#" class="card__link"><i class="bi bi-linkedin"></i></a>
+                                            <a href="#" class="card__link"><i class="bi bi-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="imgBox">
+                                    <img src="https://images.pexels.com/photos/10691449/pexels-photo-10691449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                    <img src="https://images.pexels.com/photos/2007354/pexels-photo-2007354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                </div>
+                                <div class="details">
+                                    <div class="content">
+                                        <h2>
+                                            Vugar Balakishiyev <br>
+                                            <span>Front-End Developer</span>
+                                        </h2>
+                                        <div class="social-icons">
+                                            <a href="#" class="card__link"><i class="bi bi-facebook"></i></a>
+                                            <a href="#" class="card__link"><i class="bi bi-twitter"></i></a>
+                                            <a href="#" class="card__link"><i class="bi bi-linkedin"></i></a>
+                                            <a href="#" class="card__link"><i class="bi bi-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="imgBox">
+                                    <img src="https://images.pexels.com/photos/890515/pexels-photo-890515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                    <img src="https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                </div>
+                                <div class="details">
+                                    <div class="content">
+                                        <h2>
+                                            Vugar Balakishiyev <br>
+                                            <span>Front-End Developer</span>
+                                        </h2>
+                                        <div class="social-icons">
+                                            <a href="#" class="card__link"><i class="bi bi-facebook"></i></a>
+                                            <a href="#" class="card__link"><i class="bi bi-twitter"></i></a>
+                                            <a href="#" class="card__link"><i class="bi bi-linkedin"></i></a>
+                                            <a href="#" class="card__link"><i class="bi bi-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="imgBox">
+                                    <img src="https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                    <img src="https://images.pexels.com/photos/1173777/pexels-photo-1173777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                </div>
+                                <div class="details">
+                                    <div class="content">
+                                        <h2>
+                                            Vugar Balakishiyev <br>
+                                            <span>Front-End Developer</span>
+                                        </h2>
+                                        <div class="social-icons">
+                                            <a href="#" class="card__link"><i class="bi bi-facebook"></i></a>
+                                            <a href="#" class="card__link"><i class="bi bi-twitter"></i></a>
+                                            <a href="#" class="card__link"><i class="bi bi-linkedin"></i></a>
+                                            <a href="#" class="card__link"><i class="bi bi-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="imgBox">
+                                    <img src="https://images.pexels.com/photos/1743366/pexels-photo-1743366.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                    <img src="https://images.pexels.com/photos/1526713/pexels-photo-1526713.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                </div>
+                                <div class="details">
+                                    <div class="content">
+                                        <h2>
+                                            Vugar Balakishiyev <br>
+                                            <span>Front-End Developer</span>
+                                        </h2>
+                                        <div class="social-icons">
+                                            <a href="#" class="card__link"><i class="bi bi-facebook"></i></a>
+                                            <a href="#" class="card__link"><i class="bi bi-twitter"></i></a>
+                                            <a href="#" class="card__link"><i class="bi bi-linkedin"></i></a>
+                                            <a href="#" class="card__link"><i class="bi bi-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-8 m-auto">
+                            <div class="team__description subtitle fst-normal">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam
+                                veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =================================== team =================================== -->
+
+            <!-- =================================== pricing =================================== -->
+            <section id="pricing" class="pricing">
+                <div class="container">
+                    <div class="row" data-aos="fade-up">
+                        <div class="col-lg-12">
+                            <div class="pricing__wrapper">
+                                <div class="pricing__title title">Pricing</div>
+                                <div class="pricing__subtitle subtitle">Lorem ipsum dolor sit amet consectetur.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in-up">
+                            <div class="pricing__offer">
+                                <div class="pricing__name">Free</div>
+                                <div class="pricing__amount">
+                                    <sup>$</sup>
+                                    <span>0</span>
+                                    <span class="pricing__date"> / month</span>
+                                </div>
+                                <ul class="pricing__list">
+                                    <li class="pricing__item">Aida dere</li>
+                                    <li class="pricing__item">Nec feugiat nisl</li>
+                                    <li class="pricing__item">Nulla at volutpat dola</li>
+                                    <li class="pricing__item disable">Pharetra massa</li>
+                                    <li class="pricing__item disable">Massa ultricies mi</li>
+                                </ul>
+                                <div class="pricing__button">
+                                    <a href="#">buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in">
+                            <div class="pricing__offer active">
+                                <div class="pricing__name">Developer</div>
+                                <div class="pricing__amount">
+                                    <sup>$</sup>
+                                    <span>29</span>
+                                    <span class="pricing__date"> / month</span>
+                                </div>
+                                <ul class="pricing__list">
+                                    <li class="pricing__item">Aida dere</li>
+                                    <li class="pricing__item">Nec feugiat nisl</li>
+                                    <li class="pricing__item">Nulla at volutpat dola</li>
+                                    <li class="pricing__item">Pharetra massa</li>
+                                    <li class="pricing__item">Massa ultricies mi</li>
+                                </ul>
+                                <div class="pricing__button">
+                                    <a href="#">buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in-down">
+                            <div class="pricing__offer advanced">
+                                <div class="pricing__name">Business</div>
+                                <div class="pricing__amount">
+                                    <sup>$</sup>
+                                    <span>49</span>
+                                    <span class="pricing__date"> / month</span>
+                                </div>
+                                <ul class="pricing__list">
+                                    <li class="pricing__item">Aida dere</li>
+                                    <li class="pricing__item">Nec feugiat nisl</li>
+                                    <li class="pricing__item">Nulla at volutpat dola</li>
+                                    <li class="pricing__item">Pharetra massa</li>
+                                    <li class="pricing__item">Massa ultricies mi</li>
+                                </ul>
+                                <div class="pricing__button">
+                                    <a href="#">buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =================================== pricing =================================== -->
+
+            <!-- =================================== accordion =================================== -->
+            <section id="accordion" class="accordion">
+                <div class="container">
+                    <div class="row" data-aos="zoom-in">
+                        <div class="col-lg-12">
+                            <div class="accordion__wrapper">
+                                <div class="accordion__title title">FREQUENTLY ASKED QUESTIONS</div>
+                                <div class="accordion__subtitle subtitle">Lorem ipsum dolor sit amet consectetur.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" data-aos="zoom-in-up">
+                        <div class="col-lg-12">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item accordion__item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <div class="accordion__name">
+                                                Non consectetur a erat nam at lectus urna duis?
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="accordion__description">
+                                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+                                                laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
+                                                rhoncus dolor purus non.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item accordion__item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <div class="accordion__name">
+                                                Feugiat scelerisque varius morbi enim nunc?
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="accordion__description">
+                                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                                                interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
+                                                scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+                                                Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item accordion__item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <div class="accordion__name">
+                                                Dolor sit amet consectetur adipiscing elit?
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="accordion__description">
+                                                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
+                                                Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl
+                                                suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
+                                                convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item accordion__item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            <div class="accordion__name">
+                                                Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="accordion__description">
+                                                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim
+                                                suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan.
+                                                Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit
+                                                turpis cursus in.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item accordion__item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            <div class="accordion__name">
+                                                Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget
+                                                lorem dolor?
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="accordion__description">
+                                                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies
+                                                leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet.
+                                                Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu
+                                                scelerisque.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =================================== accordion =================================== -->
+
+            <!-- =================================== owl-carousel =================================== -->
+            <section id="slider" class="slider">
+                <div class="container">
+                    <div class="row" data-aos="zoom-in-down">
+                        <div class="col-lg-12">
+                            <div class="owl-carousel owl-theme slider__carousel">
+                                <div class="slider__item item"><img class="slider__image"
+                                        src="./assets/images/slider-images/client-1.png" alt=""></div>
+                                <div class="slider__item item"><img class="slider__image"
+                                        src="./assets/images/slider-images/client-2.png" alt=""></div>
+                                <div class="slider__item item"><img class="slider__image"
+                                        src="./assets/images/slider-images/client-3.png" alt=""></div>
+                                <div class="slider__item item"><img class="slider__image"
+                                        src="./assets/images/slider-images/client-4.png" alt=""></div>
+                                <div class="slider__item item"><img class="slider__image"
+                                        src="./assets/images/slider-images/client-5.png" alt=""></div>
+                                <div class="slider__item item"><img class="slider__image"
+                                        src="./assets/images/slider-images/client-6.png" alt=""></div>
+                                <div class="slider__item item"><img class="slider__image"
+                                        src="./assets/images/slider-images/client-7.png" alt=""></div>
+                                <div class="slider__item item"><img class="slider__image"
+                                        src="./assets/images/slider-images/client-8.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =================================== owl-carousel =================================== -->
+
+            <!-- =================================== contact-us =================================== -->
+            <section id="contact" class="contact"
+                style="background: #212529 url('./assets/images/contact-us/map-image.png')  center no-repeat;">
+                <div class="container">
+                    <div class="row" data-aos="zoom-in">
+                        <div class="col-lg-12">
+                            <div class="contact__wrapper">
+                                <div class="contact__title title">CONTACT US</div>
+                                <div class="contact__subtitle subtitle">Lorem ipsum dolor sit amet consectetur.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" data-aos="zoom-in-up">
+                        <div class="col-lg-12">
+                            <form action="#" class="form">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="input-data"><input type="text" placeholder="Your Name *" required></div>
+                                        <div class="input-data"><input type="text" placeholder="Your Email *" required></div>
+                                        <div class="input-data"><input type="text" placeholder="Your Photo *" required></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="input-data textarea">
+                                            <textarea placeholder="Your Message *" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <button class="form__button" type="submit">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =================================== contact-us =================================== -->
+        </main>
+        <!-- =================================== main =================================== -->
+
+        <!-- =================================== footer =================================== -->
+        <footer id="footer" class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="footer__copyright text-center">Copyright © Your Website 2021</div>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">
                                     <ion-icon name="logo-twitter"></ion-icon>
                                 </a></li>
-                            <li class="team__social-item"><a href="#" class="team__social-link">
+                            <li class="footer__item"><a href="#" class="footer__link">
                                     <ion-icon name="logo-facebook"></ion-icon>
                                 </a></li>
-                            <li class="team__social-item"><a href="#" class="team__social-link">
+                            <li class="footer__item"><a href="#" class="footer__link">
                                     <ion-icon name="logo-linkedin"></ion-icon>
                                 </a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="team__member-wrapper">
-                        <div class="team__member-photo">
-                            <img src="./assets/images/team/2.jpg" alt="">
-                        </div>
-                        <div class="team__member-name title">Parveen Anand</div>
-                        <div class="team__member-position subtitle">Lead Designer</div>
-
-                        <ul class="team__social-list">
-                            <li class="team__social-item"><a href="#" class="team__social-link">
-                                    <ion-icon name="logo-twitter"></ion-icon>
-                                </a></li>
-                            <li class="team__social-item"><a href="#" class="team__social-link">
-                                    <ion-icon name="logo-facebook"></ion-icon>
-                                </a></li>
-                            <li class="team__social-item"><a href="#" class="team__social-link">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="team__member-wrapper">
-                        <div class="team__member-photo">
-                            <img src="./assets/images/team/3.jpg" alt="">
-                        </div>
-                        <div class="team__member-name title">Parveen Anand</div>
-                        <div class="team__member-position subtitle">Lead Designer</div>
-
-                        <ul class="team__social-list">
-                            <li class="team__social-item"><a href="#" class="team__social-link">
-                                    <ion-icon name="logo-twitter"></ion-icon>
-                                </a></li>
-                            <li class="team__social-item"><a href="#" class="team__social-link">
-                                    <ion-icon name="logo-facebook"></ion-icon>
-                                </a></li>
-                            <li class="team__social-item"><a href="#" class="team__social-link">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-8 m-auto">
-                    <div class="team__description subtitle fst-normal">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam
-                        veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- =================================== team =================================== -->
-
-    <!-- =================================== pricing =================================== -->
-    <section id="pricing" class="pricing">
-        <div class="container">
-            <div class="row" data-aos="fade-up">
-                <div class="col-lg-12">
-                    <div class="pricing__wrapper">
-                        <div class="pricing__title title">Pricing</div>
-                        <div class="pricing__subtitle subtitle">Lorem ipsum dolor sit amet consectetur.</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in-up">
-                    <div class="pricing__offer">
-                        <div class="pricing__name">Free</div>
-                        <div class="pricing__amount">
-                            <sup>$</sup>
-                            <span>0</span>
-                            <span class="pricing__date"> / month</span>
-                        </div>
-                        <ul class="pricing__list">
-                            <li class="pricing__item">Aida dere</li>
-                            <li class="pricing__item">Nec feugiat nisl</li>
-                            <li class="pricing__item">Nulla at volutpat dola</li>
-                            <li class="pricing__item disable">Pharetra massa</li>
-                            <li class="pricing__item disable">Massa ultricies mi</li>
-                        </ul>
-                        <div class="pricing__button">
-                            <a href="#">buy now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in">
-                    <div class="pricing__offer active">
-                        <div class="pricing__name">Developer</div>
-                        <div class="pricing__amount">
-                            <sup>$</sup>
-                            <span>29</span>
-                            <span class="pricing__date"> / month</span>
-                        </div>
-                        <ul class="pricing__list">
-                            <li class="pricing__item">Aida dere</li>
-                            <li class="pricing__item">Nec feugiat nisl</li>
-                            <li class="pricing__item">Nulla at volutpat dola</li>
-                            <li class="pricing__item">Pharetra massa</li>
-                            <li class="pricing__item">Massa ultricies mi</li>
-                        </ul>
-                        <div class="pricing__button">
-                            <a href="#">buy now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in-down">
-                    <div class="pricing__offer advanced">
-                        <div class="pricing__name">Business</div>
-                        <div class="pricing__amount">
-                            <sup>$</sup>
-                            <span>49</span>
-                            <span class="pricing__date"> / month</span>
-                        </div>
-                        <ul class="pricing__list">
-                            <li class="pricing__item">Aida dere</li>
-                            <li class="pricing__item">Nec feugiat nisl</li>
-                            <li class="pricing__item">Nulla at volutpat dola</li>
-                            <li class="pricing__item">Pharetra massa</li>
-                            <li class="pricing__item">Massa ultricies mi</li>
-                        </ul>
-                        <div class="pricing__button">
-                            <a href="#">buy now</a>
+                    <div class="col-lg-4">
+                        <div class="footer__navigation text-center">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Use</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- =================================== pricing =================================== -->
+        </footer>
+        <!-- =================================== footer =================================== -->
 
-    <!-- =================================== accordion =================================== -->
-    <section id="accordion" class="accordion">
-        <div class="container">
-            <div class="row" data-aos="zoom-in">
-                <div class="col-lg-12">
-                    <div class="accordion__wrapper">
-                        <div class="accordion__title title">FREQUENTLY ASKED QUESTIONS</div>
-                        <div class="accordion__subtitle subtitle">Lorem ipsum dolor sit amet consectetur.</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" data-aos="zoom-in-up">
-                <div class="col-lg-12">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item accordion__item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <div class="accordion__name">
-                                        Non consectetur a erat nam at lectus urna duis?
-                                    </div>
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <div class="accordion__description">
-                                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
-                                        laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
-                                        rhoncus dolor purus non.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item accordion__item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <div class="accordion__name">
-                                        Feugiat scelerisque varius morbi enim nunc?
-                                    </div>
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <div class="accordion__description">
-                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
-                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
-                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item accordion__item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <div class="accordion__name">
-                                        Dolor sit amet consectetur adipiscing elit?
-                                    </div>
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <div class="accordion__description">
-                                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
-                                        Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl
-                                        suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
-                                        convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item accordion__item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <div class="accordion__name">
-                                        Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
-                                    </div>
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <div class="accordion__description">
-                                        Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim
-                                        suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan.
-                                        Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit
-                                        turpis cursus in.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item accordion__item">
-                            <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    <div class="accordion__name">
-                                        Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget
-                                        lorem dolor?
-                                    </div>
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <div class="accordion__description">
-                                        Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies
-                                        leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet.
-                                        Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu
-                                        scelerisque.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- =================================== accordion =================================== -->
-
-    <!-- =================================== owl-carousel =================================== -->
-    <section id="slider" class="slider">
-        <div class="container">
-            <div class="row" data-aos="zoom-in-down">
-                <div class="col-lg-12">
-                    <div class="owl-carousel owl-theme slider__carousel">
-                        <div class="slider__item item"><img class="slider__image"
-                                src="./assets/images/slider-images/client-1.png" alt=""></div>
-                        <div class="slider__item item"><img class="slider__image"
-                                src="./assets/images/slider-images/client-2.png" alt=""></div>
-                        <div class="slider__item item"><img class="slider__image"
-                                src="./assets/images/slider-images/client-3.png" alt=""></div>
-                        <div class="slider__item item"><img class="slider__image"
-                                src="./assets/images/slider-images/client-4.png" alt=""></div>
-                        <div class="slider__item item"><img class="slider__image"
-                                src="./assets/images/slider-images/client-5.png" alt=""></div>
-                        <div class="slider__item item"><img class="slider__image"
-                                src="./assets/images/slider-images/client-6.png" alt=""></div>
-                        <div class="slider__item item"><img class="slider__image"
-                                src="./assets/images/slider-images/client-7.png" alt=""></div>
-                        <div class="slider__item item"><img class="slider__image"
-                                src="./assets/images/slider-images/client-8.png" alt=""></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- =================================== owl-carousel =================================== -->
-
-    <!-- =================================== contact-us =================================== -->
-    <section id="contact" class="contact"
-        style="background: #212529 url('./assets/images/contact-us/map-image.png')  center no-repeat;">
-        <div class="container">
-            <div class="row" data-aos="zoom-in">
-                <div class="col-lg-12">
-                    <div class="contact__wrapper">
-                        <div class="contact__title title">CONTACT US</div>
-                        <div class="contact__subtitle subtitle">Lorem ipsum dolor sit amet consectetur.</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" data-aos="zoom-in-up">
-                <div class="col-lg-12">
-                    <form action="#" class="form">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="input-data"><input type="text" placeholder="Your Name *" required></div>
-                                <div class="input-data"><input type="text" placeholder="Your Email *" required></div>
-                                <div class="input-data"><input type="text" placeholder="Your Photo *" required></div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="input-data textarea">
-                                    <textarea placeholder="Your Message *" required></textarea>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="text-center">
-                            <button class="form__button" type="submit">Send Message</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- =================================== contact-us =================================== -->
-    </main>
-    <!-- =================================== main =================================== -->
-
-    <!-- =================================== footer =================================== -->
-    <footer id="footer" class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4">
-                    <div class="footer__copyright text-center">Copyright © Your Website 2021</div>
-                </div>
-                <div class="col-lg-4">
-                    <ul class="footer__list">
-                        <li class="footer__item"><a href="#" class="footer__link">
-                                <ion-icon name="logo-twitter"></ion-icon>
-                            </a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">
-                                <ion-icon name="logo-facebook"></ion-icon>
-                            </a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">
-                                <ion-icon name="logo-linkedin"></ion-icon>
-                            </a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footer__navigation text-center">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Use</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- =================================== footer =================================== -->
-
-    <a href="#intro" class="navigation-upper">
-        <ion-icon name="arrow-up-outline"></ion-icon>
-    </a>
+        <a href="#intro" class="navigation-upper">
+            <ion-icon name="arrow-up-outline"></ion-icon>
+        </a>
     </div>
 
     <!-- +++++++++++++++++++++++++++++++++++ Java Scripts +++++++++++++++++++++++++++++++++++ -->
@@ -1016,7 +1162,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- =================================== JQuerry =================================== -->
 
+    <!-- =================================== Fancybox =================================== -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!-- =================================== Fancybox =================================== -->
 
     <!-- =================================== Isotope =================================== -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>

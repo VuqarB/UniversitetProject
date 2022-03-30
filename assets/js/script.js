@@ -60,7 +60,6 @@ $('.slider__carousel').owlCarousel({
 })
 
 $('.product__carousel').owlCarousel({
-    loop:true,
     margin:10,
     autoplay: true,
     autoplayTimeout: 3000,
@@ -78,12 +77,6 @@ $('.product__carousel').owlCarousel({
         }
     }
 })
-
-// $('.portfolio__category').isotope({
-//     itemSelector: '.portfolio__item',
-//     layoutMode: 'fitRows',
-//     percentPosition: true,
-// });
 
 $(".gallery__category").on("click", "li", function() {
     const filterValue = $(this).attr("data-filter");
@@ -118,3 +111,33 @@ Fancybox.bind('[data-fancybox="gallery"]', {
       );
     },
 });
+
+Fancybox.bind('[data-fancybox="fancy-carousel"]', {
+    caption: function (fancybox, carousel, slide) {
+      return (
+        `${slide.index + 1} / ${carousel.slides.length} <br />` + slide.caption
+      );
+    },
+});
+
+
+var modalAnimate = $(".modal");
+
+modalAnimate.addClass(modalAnimate.attr("data-animate-in"));
+
+modalAnimate.on("hide.bs.modal", function(ev) {
+    if(!$(this).attr("is-from-animation-end")) {
+        ev.preventDefault();
+        $(this).addClass($(this).attr("data-animate-out"));
+        $(this).removeAdd($(this).attr("data-animate-in"));
+    }
+    !$(this).removeAttr("is-from-animation-end");
+})
+.on("animationend", function() {
+    if($(this).hasClass($(this).attr("data-animate-out"))) {
+        $(this).attr("is-from-animation-end", true);
+        $(this).modal("hide");
+        $(this).removeClass($(this).attr("data-animate-out"));
+        $(this).addClass($(this).attr("data-animate-in"));
+    }
+})
